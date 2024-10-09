@@ -34,6 +34,7 @@ function getViewportHeight() {
 if(window.innerWidth < `600px`) {
 const mobileHeight = getViewportHeight();
 document.body.style.height = `${mobileHeight}`;
+document.body.style.alignItems = "start";
 }
 
 
