@@ -155,6 +155,7 @@ listContainer.addEventListener(
         svgTag.classList.toggle('done_checked');
         listItem.classList.toggle("checked");
         updateProgress();
+        saveData();
         if (listItem.classList.contains("checked") && auto_del.checked) {
             autoDeleteTask(listItem);
         } else {
