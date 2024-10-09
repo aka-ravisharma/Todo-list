@@ -25,6 +25,17 @@ const delete_icon = `<svg fill="#e74c3c" xmlns="http://www.w3.org/2000/svg" view
 </svg>`;
 
 
+function getViewportHeight() {
+  const viewportHeight = window.innerHeight;
+  const navbarHeight = document.querySelector('.navbar').offsetHeight; // Adjust selector as needed
+  return viewportHeight - navbarHeight;
+}
+
+if(window.innerWidth < `600px`) {
+const mobileHeight = getViewportHeight();
+document.body.style.height = `${mobileHeight}`;
+}
+
 
 
 const progressCircle = document.querySelector('.progress-ring__circle');
