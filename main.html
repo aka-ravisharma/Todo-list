@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200px" height="60px">
+        <style>
+          .outline { fill: none; stroke: #444; stroke-width: 2; }
+          .text { fill: #444; font-family: 'Arial', sans-serif; font-weight: bold; }
+          .transition-text { opacity: 0; transition: opacity 0.5s ease; }
+          .transition-group:hover .transition-text { opacity: 1; }
+        </style>
+        <rect width="200" height="60" class="outline" rx="10" ry="10"/>
+        <g class="transition-group">
+          <text x="10" y="35" class="text" font-size="24">Create</text>
+          <text x="10" y="35" class="text transition-text" font-size="24">Create New</text>
+        </g>
+      </svg>
+      
+      
+      
+</body>
+</html>
